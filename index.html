@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Co. — Artisan Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <div id="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Main">
+    <a href="#hero" class="nav-logo">
+      <div class="logo-cup">
+        <svg viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+          <g class="steam" style="animation-delay:0s"><path d="M13 10 Q11 7 13 4" /></g>
+          <g class="steam" style="animation-delay:0.7s"><path d="M19 11 Q17 8 19 5" /></g>
+          <g class="steam" style="animation-delay:1.4s"><path d="M25 10 Q23 7 25 4" /></g>
+          <path d="M8 14 L10 30 Q10 32 12 32 L26 32 Q28 32 28 30 L30 14 Z" fill="#3b1f0e"/>
+          <path d="M30 18 Q36 18 36 23 Q36 28 30 28" stroke="#6b3a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <ellipse cx="19" cy="14" rx="11" ry="3.5" fill="#d4945a" opacity="0.9"/>
+          <ellipse cx="19" cy="33.5" rx="13" ry="2.5" fill="#b5722a" opacity="0.3"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">Brew &amp; Co.</span>
+        <span class="logo-tagline">Artisan Coffee</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero"    class="nav-link active">Home</a></li>
+      <li><a href="#menu"    class="nav-link">Menu</a></li>
+      <li><a href="#story"   class="nav-link">Our Story</a></li>
+      <li><a href="#contact" class="nav-link">Visit Us</a></li>
+      <li><a href="#contact" class="nav-link nav-reserve">Reserve a Table</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="coffee-ring" style="width:500px;height:500px;top:-180px;right:-120px;opacity:0.6;"></div>
+    <div class="coffee-ring" style="width:300px;height:300px;bottom:-80px;left:-60px;opacity:0.4;"></div>
+    <p class="hero-badge">Est. 2018 — Single Origin</p>
+    <h1 class="hero-title">Every sip<br>tells a<br><em>story.</em></h1>
+    <div class="divider"></div>
+    <p class="hero-sub">Sourced from small farms. Roasted with intention. Served with warmth. This is coffee as it was meant to be.</p>
+    <div class="hero-buttons">
+      <a href="#menu"  class="btn-dark">Explore Menu</a>
+      <a href="#story" class="btn-outline">Our Story</a>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <p class="section-eyebrow">What We Brew</p>
+    <h2 class="section-title">The Menu</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Handcrafted drinks made with beans sourced directly from farmers we trust.</p>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-card-icon">☕</div>
+        <p class="menu-card-name">House Espresso</p>
+        <p class="menu-card-desc">A full-bodied double shot with notes of dark chocolate and toasted hazelnut.</p>
+        <p class="menu-card-price">₹ 180</p>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-icon">🥛</div>
+        <p class="menu-card-name">Oat Flat White</p>
+        <p class="menu-card-desc">Velvety oat milk microfoam poured over a ristretto. Silky. Subtle. Perfect.</p>
+        <p class="menu-card-price">₹ 260</p>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-icon">🧊</div>
+        <p class="menu-card-name">Cold Brew Tonic</p>
+        <p class="menu-card-desc">18-hour cold brew floated over sparkling tonic with a citrus peel twist.</p>
+        <p class="menu-card-price">₹ 300</p>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-icon">🍵</div>
+        <p class="menu-card-name">Masala Chai Latte</p>
+        <p class="menu-card-desc">Whole spices, Assam leaves, steamed jaggery milk. Our tribute to India.</p>
+        <p class="menu-card-price">₹ 220</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story">
+    <p class="section-eyebrow">Who We Are</p>
+    <h2 class="section-title">Rooted in Craft</h2>
+    <div class="divider"></div>
+    <div class="story-layout">
+      <div class="story-visual">
+        <svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg">
+          <rect width="300" height="340" fill="#f5ede0"/>
+          <rect x="0" y="270" width="300" height="70" fill="#d4b896" opacity="0.4"/>
+          <path d="M105 80 L85 240 Q85 255 100 255 L200 255 Q215 255 215 240 L195 80 Z" fill="#6b3a22" opacity="0.85"/>
+          <rect x="130" y="50" width="40" height="36" rx="6" fill="#3b1f0e"/>
+          <path d="M215 140 Q248 140 248 175 Q248 210 215 210" stroke="#b5722a" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M150 86 Q148 100 147 115 Q146 128 148 140" stroke="#b5722a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+          <ellipse cx="150" cy="240" rx="50" ry="8" fill="#1c0f07" opacity="0.5"/>
+          <path d="M130 220 Q125 205 130 190" stroke="#d4945a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+          <path d="M150 215 Q145 200 150 185" stroke="#d4945a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+          <path d="M170 218 Q165 203 170 188" stroke="#d4945a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+          <ellipse cx="150" cy="260" rx="72" ry="10" fill="#c0a070" opacity="0.25"/>
+          <ellipse cx="55"  cy="200" rx="10" ry="6"   fill="#3b1f0e" opacity="0.5" transform="rotate(-20,55,200)"/>
+          <ellipse cx="44"  cy="220" rx="8"  ry="5"   fill="#3b1f0e" opacity="0.4" transform="rotate(15,44,220)"/>
+          <ellipse cx="245" cy="190" rx="9"  ry="5.5" fill="#3b1f0e" opacity="0.4" transform="rotate(30,245,190)"/>
+          <ellipse cx="258" cy="215" rx="8"  ry="5"   fill="#3b1f0e" opacity="0.35" transform="rotate(-10,258,215)"/>
+          <text x="150" y="170" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5ede0" opacity="0.7">BREW &amp; CO.</text>
+        </svg>
+      </div>
+      <div class="story-content">
+        <p><strong>It started with a Moka pot</strong> and a stubborn belief that great coffee doesn't need to be complicated — just honest.</p>
+        <p>We work directly with small-holder farmers across Coorg, Chikmagalur, and Araku Valley, buying at fair prices and roasting in small batches every week.</p>
+        <p>No shortcuts. No burnt beans hidden under flavoured syrups. Just terroir you can taste.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="stat-num">12</span><span class="stat-label">Farm Partners</span></div>
+          <div class="stat"><span class="stat-num">4</span><span class="stat-label">Origins</span></div>
+          <div class="stat"><span class="stat-num">7</span><span class="stat-label">Years Brewing</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-eyebrow">Find Us</p>
+    <h2 class="section-title">Reserve a Spot</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Walk-ins welcome, but a reservation means your favourite corner table is waiting.</p>
+    <div class="contact-form">
+      <input type="text"  placeholder="Your name" />
+      <input type="email" placeholder="Email address" />
+      <select>
+        <option value="" disabled selected>Number of guests</option>
+        <option>1 — Just me</option>
+        <option>2 — A pair</option>
+        <option>3–4 — Small group</option>
+        <option>5+ — A gathering</option>
+      </select>
+      <input type="date" />
+      <textarea placeholder="Any special requests? (dietary needs, occasion…)"></textarea>
+      <button class="btn-dark" id="reserve-btn">Confirm Reservation →</button>
+    </div>
+    <p id="form-msg" class="form-msg"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 <span>Brew &amp; Co.</span> — Artisan Coffee, Hyderabad.
+    Made with care by a CS intern at Prodigy Infotech. ☕
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
